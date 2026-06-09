@@ -55,6 +55,7 @@ function keyPressed() {
   if (key === '4' && typeof triggerGicheolSkill === 'function') triggerGicheolSkill(1); 
   if (key === '6' && typeof triggerFinalBossSkill === 'function') triggerFinalBossSkill(1);
   if (key === '7' && typeof triggerFinalBossSkill === 'function') triggerFinalBossSkill(2);
+    if (key === '5' && typeof triggerGicheolSkill === 'function') triggerGicheolSkill(5); 
 
   // ==========================================
   // ★ 추가된 부분: 스테이지 강제 이동 치트키
