@@ -348,4 +348,29 @@ function valueDefind() {
   jsMobHeight = 170;
   jsMobSpeed = 1.4;
   jsMobDamage = 1;
+  // 1. 플레이어 상태 및 스킬 초기화
+  isStage1BossZoneEntered = false;
+  playerDirection = 'right';
+  skillTF = [1, 1, 1];
+  skillCooldown = [0, 0, 0];
+  lSkillsX = []; lSkillsY = []; lSkillsDir = []; lSkillsAngle = [];
+  activeQSkill = null;
+  activeESkill = null;
+  qImpactEffect = null;
+  screenShake = 0;
+
+  // 2. 정기철 교수님 스킬 및 상태 초기화
+  gcSkill1Phase = 0;
+  gcSkill2Phase = 0;
+  gicheolLastTeleport = 0;
+  gicheolPosIdx = 1;
+
+  // 3. 오경수 교수님 스킬 및 상태 초기화
+  ksSkill1Phase = 0;
+  ksProjectiles = [];
+  ksMobs = [];
+
+  // 4. 최종 보스 스킬 및 상태 초기화
+  laserBeam = null;
+  lastSkill6Time = 0;
 }
